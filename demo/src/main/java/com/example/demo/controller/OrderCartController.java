@@ -79,7 +79,7 @@ public class OrderCartController {
 //	}
 
 	@PostMapping("/cart")
-	public ResponseEntity<String> findById(@RequestBody OrderDto orderDto){
+	public ResponseEntity<String> buyProduct(@RequestBody OrderDto orderDto){
 		Orders orders = new Orders(orderDto.getCustomerName(), 
 				 orderDto.getCustomerAddress(),orderDto.getCartItems());
 		orderCartServices.saveOrders(orders);
