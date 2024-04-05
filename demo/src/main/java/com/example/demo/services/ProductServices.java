@@ -15,7 +15,7 @@ import jakarta.transaction.Transactional;
 
 @Service
 @Transactional
-public class ProductServices { //services link ke repo 
+public class ProductServices {
 
 	@Autowired
 	private ProductRepository productRepository;
